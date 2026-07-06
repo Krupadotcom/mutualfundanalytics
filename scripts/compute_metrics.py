@@ -5,7 +5,7 @@ from pathlib import Path
 # -----------------------------
 # Paths
 # -----------------------------
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 DB_PATH = BASE_DIR / "bluestock_mf.db"
 OUTPUT_DIR = BASE_DIR / "data" / "processed"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
